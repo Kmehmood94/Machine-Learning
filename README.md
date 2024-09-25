@@ -32,43 +32,12 @@ The dataset used in this project is the **Wisconsin Diagnostic Breast Cancer (WD
 
 ```
 ├── data
-│   ├── breast_cancer.csv          # The dataset used for this project
+│   ├── data.csv          # The dataset used for this project
 ├── notebooks
-│   ├── 01_data_preprocessing.ipynb  # Data preprocessing steps
-│   ├── 02_eda.ipynb                 # Exploratory Data Analysis
-│   ├── 03_feature_engineering.ipynb # Feature engineering
-│   ├── 04_modeling.ipynb            # Model development and evaluation
-│   ├── 05_deployment.ipynb          # Model deployment using FastAPI
-├── src
-│   ├── preprocess.py               # Preprocessing scripts
-│   ├── model.py                    # Model training and evaluation scripts
-│   ├── app.py                      # FastAPI app for deployment
-├── requirements.txt               # List of dependencies
+│   ├── ML_Project_Breast_Cancer_Detection.ipynb  # Data preprocessing steps,  FastAPI app for deployment                              
 ├── README.md                      # Project overview
 ├── LICENSE                        # License information
 └── .gitignore                     # Files and directories to ignore in Git
-```
-
-## Installation
-
-To get started with this project, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/breast-cancer-detection.git
-   cd breast-cancer-detection
-   ```
-
-2. **Create a virtual environment and activate it:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-
-3. **Install the required packages:**
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Data Preprocessing
 
@@ -76,15 +45,15 @@ The preprocessing steps include handling missing values, normalizing the feature
 
 ## Exploratory Data Analysis (EDA)
 
-EDA was performed to understand the distribution of features and their relationships with the target variable. Key insights and visualizations can be found in the `02_eda.ipynb` notebook.
+EDA was performed to understand the distribution of features and their relationships with the target variable. Key insights and visualizations can be found in the `ML_Project_Breast_Cancer_Detection.ipynb` notebook.
 
 ## Feature Engineering
 
-Feature engineering was done to create new meaningful features and to select the most relevant ones for modeling. The details of this process are documented in the `03_feature_engineering.ipynb` notebook.
+Feature engineering was done to create new meaningful features and to select the most relevant ones for modeling. The details of this process are documented in the `ML_Project_Breast_Cancer_Detection.ipynb` notebook.
 
 ## Modeling
 
-Several machine learning models were trained and evaluated, including Logistic Regression, Support Vector Machines (SVM), and Random Forests. Hyperparameter tuning was performed using grid search to optimize model performance. The modeling process is detailed in the `04_modeling.ipynb` notebook.
+Machine learning model were trained and evaluated, including Logistic Regression.
 
 ## Model Evaluation
 
@@ -94,9 +63,11 @@ The models were evaluated based on accuracy, precision, recall, and F1-score. Co
 
 The final model was deployed using FastAPI, making it accessible as a web service for real-time predictions. The deployment code is available in the `app.py` file, and deployment steps are documented in the `05_deployment.ipynb` notebook.
 
+The model was deployed on Hugging face for infinite evaluation and availability.
+
 ## Results
 
-- **Best Model:** Random Forest Classifier
+- **Best Model:** Logistic Regression
 - **Accuracy:** 96%
 - **Precision:** 97%
 - **Recall:** 95%
