@@ -75,9 +75,7 @@ The model was deployed on Hugging face for infinite evaluation and availability.
 
 These results demonstrate the model's ability to accurately classify tumors as benign or malignant.
 
-## Contributing
 
-Contributions to this project are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 ## License
 
